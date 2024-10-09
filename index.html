@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20241009175033">
+  <title>Template</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <button class="button-hamburger header__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="18" height="15" aria-hidden="true">
+        <use xlink:href="./images/sprite.svg#icon-hamburger"></use>
+      </svg>
+    </button>
+
+    <a href="/" class="header__logo logo">
+      <img src="./images/logo.svg" alt="Logo" width="183" height="36" class="logo__image">
+    </a>
+
+    <h1 class="header__title">Setting</h1>
+
+    <div class="header__search search">
+      <form action="#" class="search__form">
+        <label class="search__label">
+          <svg class="search__icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="./images/sprite.svg#icon-search"></use>
+          </svg>
+
+          <input type="text" class="search__input" placeholder="Search for something" name="search">
+        </label>
+      </form>
+    </div>
+
+    <button class="header__button header__button--settings" aria-label="Settings">
+      <svg width="25" height="25" aria-hidden="true">
+        <use xlink:href="./images/sprite.svg#icon-settings"></use>
+      </svg>
+    </button>
+
+    <button class="header__button header__button--notifications" aria-label="Notifications">
+      <svg width="25" height="25" aria-hidden="true">
+        <use xlink:href="./images/sprite.svg#icon-notification"></use>
+      </svg>
+    </button>
+
+    <a href="#" class="header__user">
+      <picture>
+        <source srcset="./images/ava-small.avif, ./images/ava-small_2x.avif 2x, ./images/ava-small_3x.avif 3x" type="image/avif">
+
+        <source srcset="./images/ava-small.webp, ./images/ava-small_2x.webp 2x, ./images/ava-small_3x.webp 3x" type="image/webp">
+
+        <img src="./images/ava-small.jpg" srcset="./images/ava-small_2x.jpg 2x, ./images/ava-small_3x.jpg 3x" width="60" height="60" alt="User avatar">
+      </picture>
+    </a>
+  </div>
+</header>
+
+
+    <main class="main">
+      <div class="container main__container">
+        <nav class="main__nav nav">
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-dashboard"></use>
+        </svg>
+        Dashboard
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-transactions"></use>
+        </svg>
+        Transactions
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-accounts"></use>
+        </svg>
+        Accounts
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-investments"></use>
+        </svg>
+        Investments
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-cards"></use>
+        </svg>
+        Credit Cards
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-loans"></use>
+        </svg>
+        Loans
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-services"></use>
+        </svg>
+        Services
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-privileges"></use>
+        </svg>
+        My Privileges
+      </a>
+    </li>
+
+    <li class="nav__item">
+      <a href="#" class="nav__link nav__link--active">
+        <svg class="nav__icon" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-settings--active"></use>
+        </svg>
+        Settings
+      </a>
+    </li>
+  </ul>
+</nav>
+ <section class="content main__content">
+  <div class="content__heading">
+    <ul class="content__heading-list">
+      <li class="content__heading-item">
+        <a href="#" class="content__heading-title content__heading-title--active">Edit Profile</a>
+      </li>
+
+      <li class="content__heading-item">
+        <a href="#" class="content__heading-title">Preferences</a>
+      </li>
+
+      <li class="content__heading-item">
+        <a href="#" class="content__heading-title">Security</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content__body">
+    <div class="content__image">
+      <picture>
+        <source srcset="./images/ava-big.avif, ./images/ava-big_2x.avif 2x, ./images/ava-big_3x.avif 3x" type="image/avif">
+
+        <source srcset="./images/ava-big.webp, ./images/ava-big_2x.webp 2x, ./images/ava-big_3x.webp 3x" type="image/webp">
+
+        <img src="./images/ava-big.jpg" srcset="./images/ava-big_2x.jpg 2x, ./images/ava-big_3x.jpg 3x" width="120" height="120" alt="User avatar">
+      </picture>
+
+      <button class="content__image-edit" aria-label="Edit avatar">
+        <svg width="20" height="20" aria-hidden="true">
+          <use xlink:href="./images/sprite.svg#icon-edit"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content__form">
+      <div class="form-group">
+        <label for="name" class="form-group__label">Your Name</label>
+        <input type="text" id="name" class="form-group__input" placeholder="Enter your name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="name" class="form-group__label">User Name</label>
+        <input type="text" id="email" class="form-group__input" placeholder="Enter your User Name" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="username" class="form-group__label">Password</label>
+        <input type="email" id="username" class="form-group__input" placeholder="Enter your password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-group__label">Confirm Password</label>
+        <input type="email" id="password" class="form-group__input" placeholder="Enter your password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label for="date" class="form-group__label">Date of Birth</label>
+        <input type="date" id="date" class="form-group__input" placeholder="Enter your password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label for="location" class="form-group__label">Location</label>
+        <input type="text" id="location" class="form-group__input" placeholder="Enter your location" name="location">
+      </div>
+
+      <button type="submit" class="button content__button">Save</button>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+ <script src="js/main.min.js?_v=20241009175033"></script>
+
+  </body>
+</html>
