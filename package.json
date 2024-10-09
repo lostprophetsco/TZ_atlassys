@@ -15,7 +15,7 @@
     "deploy": "gh-pages -d dist",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,md,yaml,yml}\"",
     "predeploy": "npm run build",
-    "validate": "html-validator build '--ignore=Trailing slash on void elements' --continue",
+    "validate": "html-validator dist '--ignore=Trailing slash on void elements' --continue",
     "theme": "node theme.config.js && stylelint \"./src/scss/theme/**/*.scss\" --fix && prettier --write \"./src/scss/theme/**/*.scss\""
   },
   "dependencies": {

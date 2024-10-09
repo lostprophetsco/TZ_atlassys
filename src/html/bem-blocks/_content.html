@@ -1,4 +1,4 @@
-<section class="main__content content">
+<div class="main__content content">
   <div class="content__heading">
     <ul class="content__heading-list">
       <li class="content__heading-item">
@@ -57,47 +57,34 @@
       </div>
 
       <div class="form-group">
-        <label for="name" class="form-group__label">User Name</label>
+        <label for="username" class="form-group__label">User Name</label>
         <input
           type="text"
-          id="email"
-          class="form-group__input"
-          placeholder="Enter your User Name"
-          name="email"
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="username" class="form-group__label">Password</label>
-        <input
-          type="email"
           id="username"
           class="form-group__input"
-          placeholder="Enter your password"
-          name="password"
+          placeholder="Enter your User Name"
+          name="username"
         />
       </div>
 
       <div class="form-group">
-        <label for="password" class="form-group__label">Confirm Password</label>
+        <label for="password" class="form-group__label">Password</label>
+        <input type="password" id="password" class="form-group__input" name="password" />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword" class="form-group__label">Confirm Password</label>
         <input
-          type="email"
-          id="password"
+          type="password"
+          id="confirmPassword"
           class="form-group__input"
-          placeholder="Enter your password"
-          name="password"
+          name="confirmPassword"
         />
       </div>
 
       <div class="form-group">
         <label for="date" class="form-group__label">Date of Birth</label>
-        <input
-          type="date"
-          id="date"
-          class="form-group__input"
-          placeholder="Enter your password"
-          name="password"
-        />
+        <input type="date" id="date" class="form-group__input" name="date" />
       </div>
 
       <div class="form-group">
@@ -114,4 +101,4 @@
       <button type="submit" class="button content__button">Save</button>
     </div>
   </div>
-</section>
+</div>
