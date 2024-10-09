@@ -1,0 +1,40 @@
+@use '../../theme/theme' as theme;
+
+.form-group {
+	display: flex;
+	flex-flow: column;
+	gap: 9px;
+
+	@include theme.md {
+		gap: 11px;
+	}
+
+	// .form-group__label
+	&__label {
+		font-size: 13px;
+
+		@include theme.md {
+			font-size: 15px;
+		}
+	}
+
+	// .form-group__input
+	&__input {
+		width: 100%;
+		padding: 13px 15px;
+		font-family: var(--font-family-default), system-ui, sans-serif;
+		color: var(--font-color-light-blue);
+		background-color: var(--bg-color-white);
+		border: 1px var(--border-color-blue) solid;
+		border-radius: var(--radius-15);
+		outline: none;
+
+		@include theme.md {
+			padding: 16px 20px;
+		}
+
+		&::placeholder {
+			color: var(--font-color-light-blue);
+		}
+	}
+}

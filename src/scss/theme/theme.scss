@@ -258,6 +258,8 @@ $break-xxl: 1520px;
   --bg-color-blue: #1814F3;
   --bg-color-light-gray: #F5F7FA;
   --bg-color-white: #fff;
+  --border-color-blue: #DFEAF2;
+  --border-color-gray: #F4F5F7;
 }
 
 @mixin fonts-family() {
@@ -301,6 +303,7 @@ $break-xxl: 1520px;
 @mixin radius() {
   --radius-10: 10px;
   --radius-15: 15px;
+  --radius-25: 25px;
   --radius-40: 40px;
   --radius-50percent: 50%;
   --radius-rounded: 99em;

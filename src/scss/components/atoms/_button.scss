@@ -1,0 +1,22 @@
+@use '../../theme/theme' as theme;
+
+.button {
+  display: inline-flex;
+	justify-content: center;
+  padding: 14px 74px;
+	font-family: var(--font-family-medium), system-ui, sans-serif;
+  font-size: 15px;
+	font-weight: var(--font-weight-medium);
+  color: var(--font-color-white);
+	text-align: center;
+	cursor: pointer;
+  background-color: var(--bg-color-blue);
+  border: none;
+	border-radius: var(--radius-10);
+
+  @include theme.md {
+		padding: 11px 30px;
+    font-size: 18px;
+		border-radius: var(--radius-15);
+  }
+}
