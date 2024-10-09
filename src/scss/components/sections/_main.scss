@@ -1,0 +1,28 @@
+@use '../../theme/theme' as theme;
+
+.main {
+	height: auto;
+
+	// .main__container
+	&__container {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr;
+
+
+		@include theme.md {
+			grid-template-columns: max-content 1fr;
+			padding-left: 0;
+		}
+	}
+
+	// .main__nav
+	&__nav {
+		display: none;
+
+		@include theme.md {
+			display: block;
+			padding: 30px 0
+		}
+	}
+}
