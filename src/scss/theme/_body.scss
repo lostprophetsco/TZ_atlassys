@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-width: 375px;
+  font-family: var(--font-family-default), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 135%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizespeed;
+  text-size-adjust: 100%;
+}

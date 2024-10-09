@@ -1,0 +1,29 @@
+@use './theme/theme' as theme;
+@import 'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap';
+@import 'mixins';
+@import '../../node_modules/reset-css/sass/reset';
+@import './theme/core';
+@import './theme/theme';
+@import 'components/sections';
+
+:root {
+  @include theme.grid-settings;
+  @include theme.theme-default;
+  @include theme.fonts-family;
+  @include theme.fonts-size;
+  @include theme.fonts-weight;
+  @include theme.fonts-height;
+  @include theme.indents;
+  @include theme.radius;
+  @include theme.transition-time;
+  @include theme.transition-easing;
+  @include theme.shadow;
+  @include theme.blur;
+
+  --font-family-default: inter;
+  --font-family-medium: inter-medium;
+  --font-family-semi-bold: inter-semi-bold;
+  --font-weight-defailt: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+}
