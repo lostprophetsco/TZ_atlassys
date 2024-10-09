@@ -4,6 +4,7 @@
 @import '../../node_modules/reset-css/sass/reset';
 @import './theme/core';
 @import './theme/theme';
+@import 'components/atoms';
 @import 'components/sections';
 
 :root {

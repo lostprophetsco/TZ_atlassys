@@ -1,0 +1,51 @@
+@use '../../theme/theme' as theme;
+
+.search {
+	display: flex;
+
+	// .search__form
+	&__form {
+		width: 100%;
+	}
+
+	// .search__label
+	&__label {
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 10px;
+		width: 100%;
+		padding: 12px 20px;
+		cursor: pointer;
+		background-color: var(--bg-color-light-gray);
+		border-radius: var(--radius-40);
+
+		@include theme.md {
+			gap: 15px;
+			padding: 15px 25px
+		}
+	}
+
+	// .search__icon
+	&__icon {
+		display: block;
+
+	}
+
+	// .search__input
+	&__input {
+		font-family: var(--font-family-default), system-ui, sans-serif;
+		font-size: 13px;
+		color: var(--font-color-search-blue);
+		background-color: transparent;
+		border: none;
+		outline: none;
+
+		@include theme.md {
+			font-size: 15px;
+		}
+
+		&::placeholder {
+			color: var(--font-color-search-blue);
+		}
+	}
+}

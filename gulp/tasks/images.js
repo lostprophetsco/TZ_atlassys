@@ -15,35 +15,32 @@ const images = (isBuild, serverInstance) => {
     .pipe(logger.handleError('IMAGES-MIN'))
     .pipe(plugins.newer(filePaths.build.images))
     .pipe(
-      plugins.if(
-        isBuild,
-        imagemin([
-          gifsicle({
-            interlaced: true, // чересстрочная загрузка изображения
-          }),
-          optipng({
-            optimizationLevel: 5, // уровень оптимизации png файла
-          }),
-          pngQuant({
-            quality: [0.8, 0.9], // уровень оптимизации png файла
-          }),
-          mozjpeg({
-            quality: 80, // уровень оптимизации jpg файла
-            progressive: true, // чересстрочная загрузка изображения
-          }),
-          svgo({
-            plugins: [
-              { cleanupIds: true }, // удаляет неиспользуемые id
-              { removeUselessDefs: true }, // удаляет <defs>
-              { removeViewBox: true }, // удаляет атрибут viewBox
-              { removeComments: true }, // удаляет комментарии
-              // { inlineStyles: { removeMatchedSelectors: false, onlyMatchedOnce: false } }, // оставляет стили в теге style
-              { mergePaths: true }, // объединяет несколько путей в один
-              { minifyStyles: false }, // не удаляет @keyframes из тега style
-            ],
-          }),
-        ]),
-      ),
+      imagemin([
+        gifsicle({
+          interlaced: true, // чересстрочная загрузка изображения
+        }),
+        optipng({
+          optimizationLevel: 5, // уровень оптимизации png файла
+        }),
+        pngQuant({
+          quality: [0.8, 0.9], // уровень оптимизации png файла
+        }),
+        mozjpeg({
+          quality: 85, // уровень оптимизации jpg файла
+          progressive: true, // чересстрочная загрузка изображения
+        }),
+        svgo({
+          plugins: [
+            { cleanupIds: true }, // удаляет неиспользуемые id
+            { removeUselessDefs: true }, // удаляет <defs>
+            { removeViewBox: true }, // удаляет атрибут viewBox
+            { removeComments: true }, // удаляет комментарии
+            // { inlineStyles: { removeMatchedSelectors: false, onlyMatchedOnce: false } }, // оставляет стили в теге style
+            { mergePaths: true }, // объединяет несколько путей в один
+            { minifyStyles: false }, // не удаляет @keyframes из тега style
+          ],
+        }),
+      ]),
     )
     .pipe(gulp.dest(filePaths.build.images))
     .pipe(gulp.src(filePaths.src.svg))
@@ -54,7 +51,7 @@ const images = (isBuild, serverInstance) => {
     .src(filePaths.src.images)
     .pipe(logger.handleError('IMAGES-WEBP'))
     .pipe(plugins.newer(filePaths.build.images))
-    .pipe(plugins.if(isBuild, webp({ quality: 80 })))
+    .pipe(webp({ quality: 85 }))
     .pipe(gulp.dest(filePaths.build.images))
     .pipe(serverInstance.stream());
 
@@ -62,7 +59,7 @@ const images = (isBuild, serverInstance) => {
     .src(filePaths.src.images)
     .pipe(logger.handleError('IMAGES-AVIF'))
     .pipe(plugins.newer(filePaths.build.images))
-    .pipe(plugins.if(isBuild, avif({ quality: 80 })))
+    .pipe(avif({ quality: 85 }))
     .pipe(gulp.dest(filePaths.build.images))
     .pipe(serverInstance.stream());
 

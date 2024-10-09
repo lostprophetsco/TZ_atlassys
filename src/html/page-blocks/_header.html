@@ -1,1 +1,70 @@
-<header class="header"></header>
+<header class="header">
+  <div class="container header__container">
+    <button
+      class="header__hamburger button-hamburger"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+    >
+      <svg width="18" height="15" aria-hidden="true">
+        <use xlink:href="@img/sprite.svg#icon-hamburger"></use>
+      </svg>
+    </button>
+
+    <a href="/" class="logo header__logo">
+      <img src="@img/logo.svg" alt="Logo" width="183" height="36" class="logo__image" />
+    </a>
+
+    <h1 class="header__title">Setting</h1>
+
+    <div class="header__search search">
+      <form action="#" class="search__form">
+        <label class="search__label">
+          <svg class="search__icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="@img/sprite.svg#icon-search"></use>
+          </svg>
+
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search for something"
+            name="search"
+          />
+        </label>
+      </form>
+    </div>
+
+    <button class="header__button header__button--settings" aria-label="Settings">
+      <svg width="25" height="25" aria-hidden="true">
+        <use xlink:href="@img/sprite.svg#icon-settings"></use>
+      </svg>
+    </button>
+
+    <button class="header__button header__button--notifications" aria-label="Notifications">
+      <svg width="25" height="25" aria-hidden="true">
+        <use xlink:href="@img/sprite.svg#icon-notification"></use>
+      </svg>
+    </button>
+
+    <a href="#" class="header__user">
+      <picture>
+        <source
+          srcset="@img/ava-small.avif 1x, @img/ava-small_2x.avif 2x, @img/ava-small_3x.avif 3x"
+          type="image/avif"
+        />
+
+        <source
+          srcset="@img/ava-small.webp 1x, @img/ava-small_2x.webp 2x, @img/ava-small_3x.webp 3x"
+          type="image/webp"
+        />
+
+        <img
+          src="@img/ava-small.jpg"
+          srcset="@img/ava-small_2x.jpg 2x, @img/ava-small_3x.jpg 3x"
+          width="60"
+          height="60"
+          alt="User avatar"
+        />
+      </picture>
+    </a>
+  </div>
+</header>
