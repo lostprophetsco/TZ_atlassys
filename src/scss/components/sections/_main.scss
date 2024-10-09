@@ -1,7 +1,7 @@
 @use '../../theme/theme' as theme;
 
 .main {
-	height: auto;
+	height: 100%;
 
 	// .main__container
 	&__container {
@@ -12,6 +12,7 @@
 
 		@include theme.md {
 			grid-template-columns: max-content 1fr;
+			height: 100%;
 			padding-left: 0;
 		}
 	}
