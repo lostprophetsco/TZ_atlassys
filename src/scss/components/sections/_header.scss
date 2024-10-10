@@ -1,11 +1,15 @@
 @use '../../theme/theme' as theme;
 
 .header {
+	@include theme.md {
+		border-bottom: 1px var(--border-color-light-blue) solid;
+	}
+
 	// .header__container
 	&__container {
 		display: flex;
 		flex-flow: row wrap;
-		gap: 20px 25px;
+		gap: 20px 30px;
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 25px;
@@ -50,12 +54,12 @@
 		@include theme.md {
 			flex-grow: 1;
 			order: unset;
-			margin-left: 20px;
+			margin-left: 25px;
 			font-size: 28px;
 		}
 
 		@include theme.lg {
-			margin-left: 33px;
+			margin-left: 40px;
 		}
 	}
 

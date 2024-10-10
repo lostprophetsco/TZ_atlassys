@@ -2,7 +2,7 @@ $break-sm: 576px;
 $break-md: 768px;
 $break-lg: 992px;
 $break-xl: 1200px;
-$break-xxl: 1520px;
+$break-xxl: 1440px;
 
 @mixin sm() {
   @media screen and (min-width: $break-sm) {
@@ -37,7 +37,7 @@ $break-xxl: 1520px;
 @mixin grid-settings() {
   --container: 100%;
   --debug-container: '100%';
-  --fields: 40px;
+  --fields: 25px;
   --debug-fields: '16px';
   --gap: 40px;
   --debug-gap: '14px';
@@ -78,7 +78,7 @@ $break-xxl: 1520px;
   }
 
   @include xxl {
-    --container: 1520px;
+    --container: 1440px;
     --fields: 40px;
     --gap: 40px;
     --debug-container: '1520px';
@@ -260,6 +260,7 @@ $break-xxl: 1520px;
   --bg-color-white: #fff;
   --border-color-blue: #DFEAF2;
   --border-color-gray: #F4F5F7;
+  --border-color-light-blue: #E6EFF5;
 }
 
 @mixin fonts-family() {

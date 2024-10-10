@@ -1,7 +1,7 @@
 @use '../../theme/theme' as theme;
 
 .content {
-  padding: 22px 20px;
+  padding: 18px 20px;
   background-color: var(--bg-color-white);
   border-radius: var(--radius-25);
 
@@ -9,32 +9,28 @@
     padding: 37px 30px;
   }
 
-  // .content__heading
-  &__heading {
-  }
-
   // .content__heading-list
   &__heading-list {
     display: flex;
     flex-flow: row wrap;
-		gap: 10px 20px;
+    gap: 10px 27px;
     border-bottom: 1px var(--border-color-gray) solid;
 
-		@include theme.md {
-			gap: 15px 27px;
-		}
+    @include theme.md {
+      gap: 15px 27px;
+    }
 
-		@include theme.lg {
-			gap: 20px 57px;
-		}
+    @include theme.lg {
+      gap: 20px 45px;
+    }
   }
 
   // .content__heading-title
   &__heading-title {
     position: relative;
     display: block;
-    height: 30px;
-    padding: 0 2px;
+    height: 28px;
+    padding: 0 6px;
     font-family: var(--font-family-medium), system-ui, sans-serif;
     font-size: 13px;
     font-weight: var(--font-weight-medium);
@@ -51,7 +47,7 @@
     }
 
     @include theme.lg {
-      padding: 0 16px;
+      padding: 0 14px;
     }
 
     // .content__heading-title--active
@@ -75,13 +71,13 @@
   &__body {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 22px;
-    margin-top: 25px;
+    gap: 19px;
+    margin-top: 22px;
 
     @include theme.md {
-      grid-template-columns: max-content 1fr;
+      grid-template-columns: 132px 1fr;
       gap: 33px;
-      margin-top: 52px;
+      margin-top: 50px;
     }
 
     @include theme.lg {
@@ -99,8 +95,8 @@
   // .content__image-edit
   &__image-edit {
     position: absolute;
-    right: -3%;
-    bottom: 10%;
+    right: -1%;
+    bottom: 13%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,6 +106,11 @@
     background-color: var(--bg-color-blue);
     border: none;
     border-radius: var(--radius-50percent);
+
+    @include theme.md {
+      right: -3%;
+      bottom: 10%;
+    }
 
     // .content__image-edit svg
     svg {
@@ -138,7 +139,7 @@
 
     @include theme.lg {
       grid-template-columns: 1fr 1fr;
-      gap: 22px 29px;
+      gap: 19px 30px;
     }
   }
 
@@ -146,7 +147,9 @@
   &__button {
     @include theme.lg {
       grid-column: 2 / 3;
+      justify-self: flex-end;
       width: auto;
+      padding: 14px 74px;
     }
 
     width: 100%;

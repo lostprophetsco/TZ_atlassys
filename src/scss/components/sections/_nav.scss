@@ -1,8 +1,12 @@
 .nav {
 	$this: &;
 
+	position: relative;
+	top: -1px;
   width: 100%;
+	height: calc(100% + 1px);
   background-color: var(--bg-color-white);
+	border-right: 1px var(--border-color-light-blue) solid;
 
   // .nav__list
   &__list {
@@ -10,7 +14,7 @@
 		top: 30px;
     display: flex;
     flex-flow: column;
-    gap: 40px;
+    gap: 39px;
   }
 
   // .nav__link
